@@ -1,7 +1,9 @@
 <div id="main" fxLayout="row" fxLayoutAlign='center center'>
   <mat-card class="mat-elevation-z5" fxFlex.xs="100%" fxFlex.gt-xs="600px">
     <form [formGroup]="loginForm">
+
     <mat-card-header>
+      <mat-icon mat-card-avatar color="primary">account_circle</mat-icon>
       <mat-card-title>
         Login
       </mat-card-title>
@@ -32,7 +34,7 @@
       </button>
     </mat-card-actions>
 
-    <mat-card-footer>
+    <mat-card-footer style="padding: 10px;">
       Not registered? <a routerLink="/register">Register here</a>
     </mat-card-footer>
     </form>
