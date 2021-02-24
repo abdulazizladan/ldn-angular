@@ -30,13 +30,13 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-    this._simpleAuth.login({"email" : "", "password" : ""}).subscribe(
+    /*this._simpleAuth.login({"email" : "", "password" : ""}).subscribe(
       res => {
         console.log("Status: 200")
       },err => {
         console.log("Unable to login")
       }
-    )
+    )*/
   }
 
 }
