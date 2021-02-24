@@ -7,12 +7,11 @@ import { loginData } from '../models/loginData.model';
 })
 export class SimpleAuthService {
 
-  private loginUrl: string;
-  private registerUrl: string;
+  private readonly loginUrl: string = "./api//auth/login";
+  private registerUrl: string = "./api/auth/register";
 
   constructor( private _http: HttpClient ){
-    this.loginUrl = "";
-    this.registerUrl = "";
+
   }
 
   login( loginUserData: loginData ){
@@ -21,6 +20,10 @@ export class SimpleAuthService {
 
   register( registerData: any){
     return this._http.post<any>(this.registerUrl, registerData)
+  }
+
+  isLoggedIn(): boolean{
+    return true;
   }
 
 }
