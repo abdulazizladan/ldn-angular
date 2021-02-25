@@ -19,6 +19,18 @@
    sodipodi:docname="bg.svg">
   <defs
      id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient847">
+      <stop
+         style="stop-color:#1565c0;stop-opacity:1;"
+         offset="0"
+         id="stop843" />
+      <stop
+         style="stop-color:#05458e;stop-opacity:1"
+         offset="1"
+         id="stop845" />
+    </linearGradient>
     <inkscape:path-effect
        effect="powerstroke"
        id="path-effect4881"
@@ -36,6 +48,15 @@
        effect="spiro"
        id="path-effect4879"
        is_visible="true" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient847"
+       id="linearGradient849"
+       x1="26.42857"
+       y1="116.42858"
+       x2="502.14285"
+       y2="116.42858"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -91,7 +112,7 @@
      id="layer3"
      inkscape:label="Background 1">
     <path
-       style="fill:#1565c0;fill-opacity:1;stroke:none;stroke-width:2.64566922;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#linearGradient849);fill-opacity:1;stroke:none;stroke-width:2.64566922;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M -5.428571,-8.571414 H 507.42855 V 171.42859 c -102.29964,48.73352 -396.80039,48.84771 -512.857121,0 z"
        id="rect840"
        inkscape:connector-curvature="0"
