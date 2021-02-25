@@ -1,6 +1,6 @@
 <div id="main" fxLayout="row" fxLayoutAlign='center center'>
   <mat-card class="mat-elevation-z5" fxFlex.xs="100%" fxFlex.gt-xs="600px">
-    <form>
+    <form [formGroup]="registrationForm">
 
       <mat-card-header>
         <mat-icon mat-card-avatar color="primary">account_circle</mat-icon>
@@ -16,38 +16,38 @@
 
         <mat-form-field appearance="outline">
           <mat-label>first name</mat-label>
-          <input matInput type='text' required>
+          <input matInput type='text' required formControlName="firstName">
           <mat-icon color="primary" matSuffix>person</mat-icon>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
           <mat-label>last name</mat-label>
-          <input matInput type='text' required>
+          <input matInput type='text' required formControlName="lastName">
           <mat-icon color="primary" matSuffix>person</mat-icon>
         </mat-form-field>
 
         <mat-form-field appearance='outline'>
           <mat-label>email</mat-label>
-          <input matInput type='email' required>
+          <input matInput type='email' required formControlName="email">
           <mat-icon color="primary" matSuffix>email</mat-icon>
         </mat-form-field>
 
         <mat-form-field appearance='outline'>
           <mat-label>password</mat-label>
-          <input matInput type='password' required>
+          <input matInput type='password' required formControlName="password">
           <mat-icon color="primary" matSuffix>lock</mat-icon>
         </mat-form-field>
 
         <mat-form-field appearance='outline'>
           <mat-label>confirm password</mat-label>
-          <input matInput type='password' required>
+          <input matInput type='password' required formControlName="passwordConfirm">
           <mat-icon color="primary" matSuffix>lock</mat-icon>
         </mat-form-field>
 
       </mat-card-content>
 
       <mat-card-actions align='end'>
-        <button mat-raised-button color='primary'>
+        <button mat-raised-button color='primary' (click)="register()" [disabled]="registrationForm.invalid">
           Register
         </button>
       </mat-card-actions>
