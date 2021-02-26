@@ -5,7 +5,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
 const routes: Routes = [
   {
     path: '',
-    loadChildren : ()=>import('./auth/auth.module').then(mod => mod.AuthModule)
+    loadChildren: ()=>import('./auth/auth.module').then(mod => mod.AuthModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: ()=>import('./dashboard/dashboard.module').then(mod => mod.DashboardModule)
   },
   {
     path: '**',
