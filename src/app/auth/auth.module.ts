@@ -8,6 +8,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatDividerModule } from '@angular/material/divider';
 
 //FlexLayoutModule
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -15,12 +17,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 
 
 @NgModule({
   declarations: [
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ResetPasswordComponent
   ],
   imports: [
     CommonModule,
@@ -30,6 +34,8 @@ import { RegisterComponent } from './components/register/register.component';
     MatInputModule,
     MatButtonModule,
     MatIconModule,
+    MatToolbarModule,
+    MatDividerModule,
     FlexLayoutModule,
     AuthRoutingModule
   ]

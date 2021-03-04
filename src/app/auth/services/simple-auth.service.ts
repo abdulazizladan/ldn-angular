@@ -23,7 +23,7 @@ export class SimpleAuthService {
   }
 
   isLoggedIn(): boolean{
-    return true;
+    return !!localStorage.getItem('token');
   }
 
 }
